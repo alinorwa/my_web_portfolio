@@ -22,8 +22,12 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
   useEffect(() => {
     // Intro logo entrance
-    gsap.fromTo('.intro-logo', { opacity: 0, scale: .8 }, { opacity: 1, scale: 1, duration: .8, ease: 'back.out(1.6)', delay: .2 })
-    gsap.fromTo('.start-btn',  { opacity: 0, y: 20 },     { opacity: 1, y: 0,    duration: .7, ease: 'power3.out',    delay: .6 })
+    if (document.querySelector('.intro-logo')) {
+      gsap.fromTo('.intro-logo', { opacity: 0, scale: .8 }, { opacity: 1, scale: 1, duration: .8, ease: 'back.out(1.6)', delay: .2 })
+    }
+    if (document.querySelector('.start-btn')) {
+      gsap.fromTo('.start-btn',  { opacity: 0, y: 20 },     { opacity: 1, y: 0,    duration: .7, ease: 'power3.out',    delay: .6 })
+    }
 
     // Scroll progress bar
     ScrollTrigger.create({
@@ -65,6 +69,9 @@ export default function Home() {
         <GlobeSection />
         <SkillsSection />
         <CTASection />
+        <footer style={{ textAlign: 'center', padding: '40px 20px', color: 'var(--dim)', fontSize: '13px', borderTop: '1px solid rgba(46,212,255,0.1)', fontFamily: 'var(--font-mono)', letterSpacing: '1px' }}>
+          <p>© {new Date().getFullYear()} Designed & Built with <span style={{color: 'var(--accent)'}}>♥</span> by <span style={{color: 'var(--text)', fontWeight: 'bold'}}>Ali</span>. All Rights Reserved.</p>
+        </footer>
       </main>
     </>
   )

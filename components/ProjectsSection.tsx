@@ -73,7 +73,6 @@ export default function ProjectsSection() {
                   const shine = (e.currentTarget as HTMLElement).querySelector<HTMLElement>('.proj-shine')!
                   gsap.fromTo(shine, { left: '-60%', opacity: 1 }, { left: '160%', opacity: 1, duration: .7, ease: 'power2.out' })
                 }}>
-                <div className="proj-img-placeholder" style={{background:p.color}}>{p.emoji}</div>
                 <div className="proj-shine" />
                 <div className="proj-body">
                   <div className="proj-tag">{p.tag}</div>
