@@ -69,9 +69,51 @@ export default function Home() {
         <GlobeSection />
         <SkillsSection />
         <CTASection />
-        <footer style={{ textAlign: 'center', padding: '40px 20px', color: 'var(--dim)', fontSize: '13px', borderTop: '1px solid rgba(46,212,255,0.1)', fontFamily: 'var(--font-mono)', letterSpacing: '1px' }}>
-          <p>© {new Date().getFullYear()} Designed & Built with <span style={{color: 'var(--accent)'}}>♥</span> by <span style={{color: 'var(--text)', fontWeight: 'bold'}}>Ali</span>. All Rights Reserved.</p>
-        </footer>
+        <footer
+  style={{
+    textAlign: 'center',
+    padding: '50px 20px',
+    color: 'var(--dim)',
+    fontSize: '13px',
+    borderTop: '1px solid rgba(46,212,255,0.12)',
+    fontFamily: 'var(--font-mono)',
+    letterSpacing: '0.8px',
+    position: 'relative'
+  }}
+>
+  {/* Neon glow line */}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '120px',
+      height: '1px',
+      background: 'var(--accent)',
+      boxShadow: '0 0 10px var(--accent)',
+      opacity: 0.7
+    }}
+  />
+
+  <p style={{ margin: 0 }}>
+    <span
+      style={{
+        fontSize: '14px',
+        position: 'relative',
+        top: '-1px',
+        opacity: 0.9
+      }}
+    >
+      &copy;
+    </span>{' '}
+    {new Date().getFullYear()}{' '}
+    <span style={{ color: 'var(--text)', fontWeight: 600 }}>
+      Ali
+    </span>{' '}
+    — Building digital experiences.
+  </p>
+</footer>
       </main>
     </>
   )
