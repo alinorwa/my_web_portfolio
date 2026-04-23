@@ -139,7 +139,8 @@ export default function JourneySection() {
   }, [])
 
   return (
-    <div id="journey-outer">
+    <div id="journey-outer" >
+      
       <div id="journey-sticky">
         <div id="journey-bg" />
         <canvas id="j-burst-canvas" ref={burstRef} />

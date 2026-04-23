@@ -40,6 +40,18 @@ lib/
   data.ts           # All projects & socials data
 ```
 
+---
+
+## 📞 Contact
+
+Developed and architected by **Ali**  
+*Full Stack Software Engineer*
+
+- 💼 **LinkedIn:** [Ali](https://linkedin.com)
+- 📧 **Email:** [alialrubay499@gmail.com](mailto:alialrubay499@gmail.com)
+
+---
+
 ## Customisation
 
 - Edit **`lib/data.ts`** to change projects, social links, and handles

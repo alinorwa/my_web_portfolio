@@ -3,10 +3,11 @@ import { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import CinemaIntro     from '@/components/CinemaIntro'
+// import CinemaIntro     from '@/components/CinemaIntro'
 import CustomCursor    from '@/components/CustomCursor'
 import StarsCanvas     from '@/components/StarsCanvas'
 import NavDots         from '@/components/NavDots'
+import Navbar          from '@/components/Navbar'
 import HeroSection     from '@/components/HeroSection'
 import BrainSection    from '@/components/BrainSection'
 import JourneySection  from '@/components/JourneySection'
@@ -58,6 +59,7 @@ export default function Home() {
       <CustomCursor />
        {/* <CinemaIntro />  */}
       <NavDots />
+      <Navbar />
 
       <main>
         <HeroSection />
