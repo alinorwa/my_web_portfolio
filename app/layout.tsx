@@ -9,8 +9,12 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://alinordic.dev'),
+
   title: 'Idea → Reality | Full Stack Developer',
-  description: 'A Full Stack developer who turns ideas into real digital experiences.',
+
+  description:
+    'A Full Stack developer who turns ideas into real digital experiences.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
