@@ -57,10 +57,10 @@ export const PROJECTS = [
 ];
 
 export const SOCIALS = [
-  { name: 'GitHub',   handle: '@yourhandle',  icon: '🐙', color: 'rgba(255,255,255,.05)', ac: 'rgba(200,200,200,.15)', link: 'https://github.com/alinorwa',       desc: 'Open-source projects' },
-  { name: 'LinkedIn', handle: '@yourprofile', icon: '💼', color: 'rgba(10,102,194,.08)',  ac: 'rgba(10,102,194,.18)',  link: 'https://linkedin.com',     desc: 'Professional network' },
-  // { name: 'Twitter',  handle: '@yourtwitter', icon: '🐦', color: 'rgba(29,161,242,.06)', ac: 'rgba(29,161,242,.16)', link: 'https://twitter.com',      desc: 'Thoughts & updates' },
-  { name: 'WhatsApp', handle: '+47 97380317',   icon: '💬', color: 'rgba(37,211,102,.06)', ac: 'rgba(37,211,102,.16)', link: 'https://wa.me/0000000000', desc: 'Direct contact' },
-  { name: 'Email',    handle: 'alialrubay399@gmail.com',icon: '📧', color: 'rgba(245,200,66,.05)', ac: 'rgba(245,200,66,.14)', link: 'mailto:alialrubay399@gmail.com',     desc: 'Collaboration & work' },
-  // { name: 'Behance',  handle: '@yourbehance', icon: '🎨', color: 'rgba(0,87,255,.06)',   ac: 'rgba(0,87,255,.16)',   link: 'https://behance.net',      desc: 'Visual portfolio' },
+  { name: 'GitHub',   handle: 'https://github.com/alinorwa',  icon: '🐙', color: 'rgba(255,255,255,.05)', ac: 'rgba(200,200,200,.15)', link: 'https://github.com/alinorwa',       desc: 'Open-source projects' },
+  { name: 'LinkedIn', handle: 'https://linkedin.com', icon: '💼', color: 'rgba(10,102,194,.08)',  ac: 'rgba(10,102,194,.18)',  link: 'https://linkedin.com',     desc: 'Professional network' },
+
+  { name: 'WhatsApp', handle: '+47 97380317',   icon: '💬', color: 'rgba(37,211,102,.06)', ac: 'rgba(37,211,102,.16)',  desc: 'Direct contact' },
+  { name: 'Email',    handle: 'alialrubay499@gmail.com',icon: '📧', color: 'rgba(245,200,66,.05)', ac: 'rgba(245,200,66,.14)', link: 'mailto:alialrubay499@gmail.com',     desc: 'Collaboration & work' },
+
 ];
