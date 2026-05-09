@@ -10,34 +10,76 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://alinordic.dev'),
+
   title: {
-    default: 'Ali | Idea → Reality | Full Stack Developer',
-    template: '%s | Ali'
+    default: 'Ali Nordic | Full Stack Developer',
+    template: '%s | Ali Nordic',
   },
-  description: 'Full Stack Developer & Digital Craftsman specialized in turning complex ideas into high-performance web and mobile applications.',
-  keywords: ['Full Stack Developer', 'Ali Nordic', 'Web Development', 'Django', 'React', 'AI Solutions'],
-  authors: [{ name: 'Ali' }],
+
+  description:
+    'Full Stack Developer based in Norway building scalable web applications with React, Next.js, Django and TypeScript.',
+
+  keywords: [
+    'Ali Nordic',
+    'Full Stack Developer',
+    'Next.js Developer',
+    'React Developer',
+    'Django Developer',
+    'Web Developer Norway',
+  ],
+
+  authors: [{ name: 'Ali Nordic' }],
+
   openGraph: {
-    title: 'Ali | Idea → Reality',
-    description: 'A developer who turns ideas into reality through code and design.',
+    title: 'Ali Nordic | Full Stack Developer',
+
+    description:
+      'Building modern scalable web applications and digital experiences.',
+
     url: 'https://alinordic.dev',
-    siteName: 'Ali Portfolio',
+
+    siteName: 'Ali Nordic',
+
     locale: 'en_US',
+
     type: 'website',
+
+    images: [
+      {
+        url: 'https://alinordic.dev/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Ali Nordic Portfolio',
+      },
+    ],
   },
+
   twitter: {
     card: 'summary_large_image',
-    title: 'Ali | Full Stack Developer',
-    description: 'Crafting digital experiences from database to interface.',
+
+    title: 'Ali Nordic | Full Stack Developer',
+
+    description:
+      'Building modern web applications with Next.js, React and Django.',
+
+    images: ['https://alinordic.dev/og.png'],
   },
+
   icons: {
     icon: [
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      {
+        url: '/favicon-32x32.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+      {
+        url: '/favicon-16x16.png',
+        sizes: '16x16',
+        type: 'image/png',
+      },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png' },
-    ],
+
+    apple: [{ url: '/apple-touch-icon.png' }],
   },
 }
 
