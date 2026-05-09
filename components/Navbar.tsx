@@ -58,8 +58,8 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMobileMenuOpen ? 'menu-open' : ''}`}>
       <div className="nav-container">
-        <a href="#hero" className="nav-logo" onClick={(e) => handleNavClick(e, '#hero')}>
-          ali<span>.</span>
+        <a href="#hero" className="nav-logo" onClick={(e) => handleNavClick(e, '#hero')} aria-label="Ali Nordic Home">
+          alinordic<span>.</span>dev
         </a>
 
         {/* Desktop Links */}
