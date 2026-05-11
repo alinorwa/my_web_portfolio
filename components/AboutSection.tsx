@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from 'react'
+import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -47,7 +48,16 @@ export default function AboutSection() {
         <div className="about-avatar-wrap">
           <div className="avatar-ring-outer">
             <div className="avatar-ring" /><div className="avatar-ring" /><div className="avatar-ring" />
-            <div className="avatar-img">👨‍💻</div>
+            <div className="avatar-img">
+              <Image 
+                src="/profile.png" 
+                alt="Ali Nordic" 
+                width={260} 
+                height={260}
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                priority
+              />
+            </div>
           </div>
           <div className="float-pill" style={{top:'10%',right:'-20px'}}>Full Stack</div>
           <div className="float-pill" style={{bottom:'18%',right:'-30px'}}>UI / UX</div>
