@@ -1,6 +1,13 @@
 import type { Metadata } from 'next'
-import { Space_Mono } from 'next/font/google'
+import { Inter, Space_Mono } from 'next/font/google'
+import StyledJsxRegistry from './registry'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700', '800', '900'],
+  variable: '--font-inter',
+})
 
 const spaceMono = Space_Mono({
   subsets: ['latin'],
@@ -87,13 +94,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className={spaceMono.variable}>{children}</body>
+      <body className={`${inter.variable} ${spaceMono.variable}`}>
+        <StyledJsxRegistry>{children}</StyledJsxRegistry>
+      </body>
     </html>
   )
 }

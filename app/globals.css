@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-
 :root {
   --bg: #0b1f3a;
   --bg2: #0e2448;
@@ -10,8 +8,8 @@
   --green: #22ffaa;
   --text: #f0f8ff;
   --dim: #a8c8e8;
-  --font-sans: 'Inter', sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-space-mono), monospace;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
