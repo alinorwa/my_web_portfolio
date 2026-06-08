@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Mono } from 'next/font/google'
 import StyledJsxRegistry from './registry'
+import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css'
 
 const inter = Inter({
@@ -96,6 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.variable} ${spaceMono.variable}`}>
         <StyledJsxRegistry>{children}</StyledJsxRegistry>
+        <GoogleAnalytics gaId="G-43BND5VTJ6" />
       </body>
     </html>
   )
